@@ -1,0 +1,11 @@
+x=linspace(0,6.28,1024);
+y1=cos(x);
+y2=sin(x);
+y1=y1*32678;
+y2=y2*32678;
+fid=fopen('D:/cos_coe.txt','wt');
+fprintf(fid,'%16.0f\n',y1);
+fclose(fid);
+fid=fopen('D:/sin_coe.txt','wt');
+fprintf(fid,'%16.0f\n',y2);
+fclose(fid)
